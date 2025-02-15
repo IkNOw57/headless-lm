@@ -33,7 +33,7 @@ def tokenize_and_pack(batch, max_seq_len=max_seq_len):
     return packed_batch.tolist()
 
 print("Loading dataset...")
-ds = load_dataset(ds_name, ds_config)
+ds = load_dataset("./engine/data/train-10M-dataset")
 
 print("Packing dataset...")
 ds = ds.map(lambda x: {"packed":tokenize_and_pack(x)}, remove_columns=ds['train'].column_names, batched=True, batch_size=100000, num_proc=NUM_CPU)
