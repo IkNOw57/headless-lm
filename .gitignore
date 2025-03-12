@@ -1,4 +1,4 @@
 logs/*
 lightning_logs/
 __pycache__/
-headless-lm-venv/
+headless-venv/
