@@ -1,7 +1,7 @@
 {
-    "dataset_name": "text",
-    "dataset_config": "plain_text",
+    "dataset_name": "cambridge-climb/BabyLM",
+    "dataset_config": "strict_small",
     "hf_tokenizer": "EleutherAI/pythia-70m-deduped",
     "output": "./dataset_storage/baby-lm-small.hf",
     "max_seq_len": 2048
-} 
+}  

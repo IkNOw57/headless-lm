@@ -33,9 +33,8 @@ def tokenize_and_pack(batch, max_seq_len=max_seq_len):
     return packed_batch.tolist()
 
 print("Loading dataset...")
-ds = load_dataset(ds_name,ds_config)
+ds = load_dataset(ds_name,ds_config,trust_remote_code = True)
 
-# ds = load_dataset("./engine/data/train-10M-dataset")
 
 
 print("Packing dataset...")
